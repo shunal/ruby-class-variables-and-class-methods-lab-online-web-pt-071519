@@ -26,11 +26,11 @@ class Song
   end 
   
   def self.artist_count
-    @@artists.each do |artists|
-      if @@artist_count.key.include?(artists)
-        @@artist_count[artists] += 1 
+    @@artists.each do |artist|
+      if @@artist_count.key.include?(artist)
+        @@artist_count[artist] += 1 
       else 
-        @@artist_count[artists] = 1
+        @@artist_count[artist] = 1
       end
     end 
     @@artist_count
